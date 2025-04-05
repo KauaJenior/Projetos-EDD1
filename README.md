@@ -1,6 +1,6 @@
 ## Projeto banco
 
-Repositório para projetos da matéria de Estrutura de dados.
+Repositório para projetos e Exercícios da matéria de Estrutura de dados.
 
  ## Linguagem usada
 
