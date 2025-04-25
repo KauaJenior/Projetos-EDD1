@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 José Antonio Santos Silva
 Maria Clara Almeida
+=======
+José Antonio Santos Silva
+Maria Clara Almeida
+>>>>>>> 72fe63a0feefae4145c738d647c0233fc3303096
 Carlos Souza

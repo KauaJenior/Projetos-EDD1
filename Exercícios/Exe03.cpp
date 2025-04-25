@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -7,12 +8,12 @@
 
 using namespace std;
 
-/* 
+/*
 
 Turma:ADS 371
 Aluno: Kauã Felipe da Silva Jenior
 
-Exercício 3 - À partir de uma lista de nomes disponível em um arquivo TXT, 
+Exercício 3 - À partir de uma lista de nomes disponível em um arquivo TXT,
 transforma-los em nomes no formato agenda telefônica. Exemplo:
 
 José Antonio Santos Silva
@@ -22,7 +23,7 @@ Silva, José Antonio Santos
 
 int main(int argc, char** argv) {
 	 setlocale(LC_ALL, "");
-	
+
     ifstream arq("Lista.txt");
     if (!arq.is_open()) {
         cerr << "Erro ao abrir o arquivo!" << endl;
@@ -35,14 +36,14 @@ int main(int argc, char** argv) {
         vector<string> partes;
         string palavra;
 
-       
+
         while (ss >> palavra) {
             partes.push_back(palavra);
         }
 
         if (partes.size() > 1) {
-            string ultimo = partes.back(); 
-            partes.pop_back();             
+            string ultimo = partes.back();
+            partes.pop_back();
 
             cout << ultimo << ", ";
             for (size_t i = 0; i < partes.size(); ++i) {
@@ -51,11 +52,12 @@ int main(int argc, char** argv) {
             }
             cout << endl;
         } else {
-            
+
             cout << linha << endl;
         }
     }
 
     arq.close();
 	return 0;
+
 }
